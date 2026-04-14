@@ -1,0 +1,41 @@
+# [ Visual Studio ]
+.vs/
+out/
+debug/
+release/
+x64/
+x86/
+*.user
+*.aps
+*.opendb
+*.pdb
+*.sqlitewal
+*.sqlite
+*.VC.db
+
+# [ Build Results ]
+*.exe
+*.dll
+*.lib
+*.exp
+*.ilk
+*.pch
+*.idb
+*.obj
+*.log
+*.tlog
+*.lastbuildstate
+*.unsuccessfulbuild
+
+# [ Temporary Files ]
+ipch/
+*.sdf
+*.suo
+*.sln.docattachments.res
+*.cache
+*.Intermediate.manifest
+
+# [ External Libraries ]
+# Packages/
+# lib/
+# bin/
