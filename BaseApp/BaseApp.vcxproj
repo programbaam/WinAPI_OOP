@@ -19,7 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Source\BaseWindow.h" />
+    <ClInclude Include="Source\Platform\Windows\Core\CBaseApp.h" />
+    <ClInclude Include="Source\Platform\Windows\Core\CBaseWindow.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Platform\Windows\Core\CBaseWindow.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
