@@ -1,0 +1,66 @@
+root = true
+
+# ==============================================================================
+# 1. 모든 파일 공통 설정 (General text files)
+# ==============================================================================
+[*]
+# 들여쓰기는 스페이스 4칸 (Tab 금지)
+indent_style = space
+indent_size = 4
+
+# 줄 바꿈(Line Endings)은 Windows 표준(CRLF)
+end_of_line = crlf
+
+# 파일 끝에 항상 빈 줄 하나 추가 (Git diff 경고 방지)
+insert_final_newline = true
+
+# 줄 끝에 남은 쓸데없는 공백 자동 제거
+trim_trailing_whitespace = true
+
+# ==============================================================================
+# 2. C/C++ 소스 및 헤더 파일 전용 설정 (Visual Studio 2022)
+# ==============================================================================
+[*.{cpp,h}]
+charset = utf-8-bom
+
+# --- 들여쓰기 (Indentation) ---
+# public/protected/private 접근 제어자는 클래스와 같은 레벨에 둔다.
+cpp_indent_access_specifiers = false
+
+# switch문 안의 case 라벨은 switch와 같은 레벨에 둔다. (들여쓰기 안 함)
+cpp_indent_case_labels = false
+cpp_indent_case_contents = true
+
+# 네임스페이스 안에서는 들여쓰기를 한다.
+cpp_indent_namespace_contents = true
+
+# --- 괄호 위치 (Allman Style / K&R Style) ---
+# C++의 국룰. 함수, 타입, 제어문의 여는 중괄호 '{'는 항상 무조건 다음 줄에 작성.
+cpp_new_line_before_open_brace_namespaces = new_line
+cpp_new_line_before_open_brace_types = new_line
+cpp_new_line_before_open_brace_functions = new_line
+cpp_new_line_before_open_brace_blocks = new_line
+cpp_new_line_before_catch = new_line
+cpp_new_line_before_else = new_line
+
+# --- 공백 (Spacing) ---
+# 포인터(*) 및 참조(&) 기호는 타입 쪽에 붙인다. (예: int* p; / int *p 아님)
+cpp_space_pointer_reference_alignment = left
+
+# if, while, for 등의 키워드 뒤에는 항상 띄어쓰기를 한다. (예: if (x) / if(x) 아님)
+cpp_space_after_keywords_in_control_flow_statements = true
+
+# 함수의 소괄호 앞에는 띄어쓰기를 하지 않는다. (예: void Foo() / void Foo () 아님)
+cpp_space_before_function_open_parenthesis = false
+
+# 이항 연산자(+, -, =, ==) 앞뒤로는 항상 띄어쓰기를 한다.
+cpp_space_binary_operator = true
+cpp_space_assign_operator = true
+
+# 타입 캐스팅 괄호 안에는 공백을 두지 않는다. (예: (int)x )
+cpp_space_within_cast_parentheses = false
+
+
+# --- 줄 바꿈 (Wrapping) ---
+# 한 줄짜리 짧은 블록은 줄 바꿈을 허용하지 않고 여러 줄로 강제 변환한다.
+cpp_wrap_preserve_blocks = never
