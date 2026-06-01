@@ -23,7 +23,9 @@
     <ClInclude Include="Source\Platform\Windows\Core\CBaseWindow.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Source\Platform\Windows\Core\CBaseApp.cpp" />
     <ClCompile Include="Source\Platform\Windows\Core\CBaseWindow.cpp" />
+    <ClCompile Include="Source\Platform\Windows\Entry\Main.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>

@@ -26,5 +26,11 @@
     <ClCompile Include="Source\Platform\Windows\Core\CBaseWindow.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Platform\Windows\Entry\Main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Platform\Windows\Core\CBaseApp.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
