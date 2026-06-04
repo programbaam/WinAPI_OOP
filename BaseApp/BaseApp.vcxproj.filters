@@ -53,4 +53,14 @@
       <Filter>리소스 파일</Filter>
     </ResourceCompile>
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resource\Platform\Windows\res\main_icon.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\Platform\Windows\res\main_cursor.cur">
+      <Filter>리소스 파일</Filter>
+    </None>
+  </ItemGroup>
 </Project>

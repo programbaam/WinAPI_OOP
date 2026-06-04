@@ -35,6 +35,12 @@
   <ItemGroup>
     <ResourceCompile Include="Resource\Platform\Windows\Resource.rc" />
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resource\Platform\Windows\res\main_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\Platform\Windows\res\main_cursor.cur" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
