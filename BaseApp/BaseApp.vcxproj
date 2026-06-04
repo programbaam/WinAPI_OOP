@@ -19,13 +19,21 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Resource\Platform\Windows\Resource.h" />
     <ClInclude Include="Source\Platform\Windows\Core\CBaseApp.h" />
     <ClInclude Include="Source\Platform\Windows\Core\CBaseWindow.h" />
+    <ClInclude Include="Source\Platform\Windows\Core\CClientApp.h" />
+    <ClInclude Include="Source\Platform\Windows\Core\CMainWindow.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\Platform\Windows\Core\CBaseApp.cpp" />
     <ClCompile Include="Source\Platform\Windows\Core\CBaseWindow.cpp" />
+    <ClCompile Include="Source\Platform\Windows\Core\CClientApp.cpp" />
+    <ClCompile Include="Source\Platform\Windows\Core\CMainWindow.cpp" />
     <ClCompile Include="Source\Platform\Windows\Entry\Main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resource\Platform\Windows\Resource.rc" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
